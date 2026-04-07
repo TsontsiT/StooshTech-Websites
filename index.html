@@ -10,20 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta property="og:title" content="StooshTech Concepts | Level 1 BBBEE Consultancy JHB">
     <meta property="og:description" content="Top tech & business consultancy in Johannesburg. Level 1 BBBEE certified. PM, software, AI training & strategy.">
-    <meta property="og:type" content="website">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "StooshTech Concepts",
         "description": "Level 1 BBBEE certified technology and business consultancy based in Johannesburg, South Africa.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Johannesburg",
-            "addressRegion": "Gauteng",
-            "addressCountry": "South Africa"
-        },
-        "areaServed": ["Gauteng", "SADC Region", "South Africa"]
+        "address": {"@type": "PostalAddress", "addressLocality": "Johannesburg", "addressRegion": "Gauteng", "addressCountry": "South Africa"},
+        "areaServed": ["Gauteng", "SADC Region", "South Africa"],
+        "telephone": "+27834075848",
+        "email": "thabang.tsontsi@gmail.com"
     }
     </script>
     <style>
@@ -32,6 +28,8 @@
         .hero-bg { background: linear-gradient(135deg, #0a0a0f 0%, #0f172a 100%); }
         .service-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .service-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 212, 255, 0.15); }
+        a, button { -webkit-tap-highlight-color: transparent; }
+        input, textarea, select { font-size: 16px; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased">
@@ -42,37 +40,25 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-cyan-400 rounded-xl flex items-center justify-center text-slate-950 font-bold text-2xl">S</div>
-                <div>
-                    <span class="text-2xl font-bold tracking-tight text-white">StooshTech</span>
-                    <span class="text-cyan-400 text-2xl font-bold tracking-tight">Concepts</span>
-                </div>
-                <span class="hidden sm:inline-block text-xs px-3 py-1 bg-emerald-400/20 text-emerald-400 border border-emerald-400/30 rounded-full font-semibold">
-                    <i class="fas fa-chart-line mr-1"></i>LEVEL 1 BBBEE
-                </span>
+                <div><span class="text-2xl font-bold text-white">StooshTech</span><span class="text-cyan-400 text-2xl font-bold">Concepts</span></div>
+                <span class="hidden sm:inline-block text-xs px-3 py-1 bg-emerald-400/20 text-emerald-400 border border-emerald-400/30 rounded-full font-semibold"><i class="fas fa-chart-line mr-1"></i>LEVEL 1 BBBEE</span>
             </div>
-            
-            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <div class="hidden md:flex items-center gap-5 text-sm font-medium">
                 <a href="index.html" class="text-cyan-400">Home</a>
                 <a href="services.html" class="hover:text-cyan-400 transition">Services</a>
                 <a href="project-management.html" class="hover:text-cyan-400 transition">PM Consulting</a>
                 <a href="software-solutions.html" class="hover:text-cyan-400 transition">Software</a>
                 <a href="advisory-strategy.html" class="hover:text-cyan-400 transition">Advisory</a>
                 <a href="training.html" class="hover:text-cyan-400 transition">Training</a>
+                <a href="engagement-models.html" class="hover:text-cyan-400 transition">Engagement</a>
                 <a href="testimonials.html" class="hover:text-cyan-400 transition">Testimonials</a>
                 <a href="about.html" class="hover:text-cyan-400 transition">About</a>
             </div>
-            
             <div class="flex items-center gap-4">
-                <a href="contact.html" class="hidden md:inline-block px-5 py-2.5 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold rounded-xl transition-all">
-                    <i class="fas fa-comment-dots mr-2"></i>Contact
-                </a>
-                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <a href="contact.html" class="hidden md:inline-block px-5 py-2.5 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold rounded-xl transition-all"><i class="fas fa-comment-dots mr-2"></i>Contact</a>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
-        
-        <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-2">
             <a href="index.html" class="block py-2 text-cyan-400">Home</a>
             <a href="services.html" class="block py-2 hover:text-cyan-400">Services</a>
@@ -80,6 +66,7 @@
             <a href="software-solutions.html" class="block py-2 hover:text-cyan-400">Software</a>
             <a href="advisory-strategy.html" class="block py-2 hover:text-cyan-400">Advisory</a>
             <a href="training.html" class="block py-2 hover:text-cyan-400">Training</a>
+            <a href="engagement-models.html" class="block py-2 hover:text-cyan-400">Engagement Models</a>
             <a href="testimonials.html" class="block py-2 hover:text-cyan-400">Testimonials</a>
             <a href="about.html" class="block py-2 hover:text-cyan-400">About</a>
             <a href="contact.html" class="block py-2 bg-cyan-400 text-slate-950 text-center rounded-lg font-semibold">Contact</a>
@@ -92,43 +79,24 @@
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-8">
             <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-cyan-400 text-sm font-medium px-5 py-2 rounded-full border border-white/20">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
-                </span>
+                <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span></span>
                 LEVEL 1 BBBEE CERTIFIED | JOHANNESBURG, SA
             </div>
-            
-            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none text-white">
-                Your strategic technology<br>partner in South Africa
-            </h1>
-            
-            <p class="text-xl text-slate-400 max-w-lg">
-                PM Consulting • Fractional PM • Software Solutions • Web Design • Database • Business Advisory • Strategy • AI & Microsoft Training
-            </p>
-            
+            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none text-white">Your strategic technology<br>partner in South Africa</h1>
+            <p class="text-xl text-slate-400 max-w-lg">PM Consulting • Fractional PM • Software Solutions • Web Design • Database • Business Advisory • Strategy • AI & Microsoft Training</p>
             <div class="flex flex-wrap gap-4">
-                <a href="services.html" class="px-8 py-4 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold text-lg rounded-2xl inline-flex items-center gap-3 transition-all">
-                    Explore Services <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="contact.html" class="px-8 py-4 border-2 border-white/30 hover:border-cyan-400 font-semibold text-lg rounded-2xl inline-flex items-center gap-3 transition-all">
-                    Free Consultation <i class="fa-solid fa-calendar-check"></i>
-                </a>
+                <a href="services.html" class="px-8 py-4 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold text-lg rounded-2xl inline-flex items-center gap-3 transition-all">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="contact.html" class="px-8 py-4 border-2 border-white/30 hover:border-cyan-400 font-semibold text-lg rounded-2xl inline-flex items-center gap-3 transition-all">Free Consultation <i class="fa-solid fa-calendar-check"></i></a>
             </div>
-            
             <div class="flex items-center gap-8 text-sm">
                 <div class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i><span>15+ Years Expertise</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-cyan-400"></i><span>Gauteng & SADC</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-cyan-400"></i><span>Sandton, Gauteng & SADC</span></div>
             </div>
         </div>
-        
         <div class="relative">
             <div class="bg-slate-900/50 backdrop-blur-sm border border-cyan-400/20 rounded-3xl p-4 shadow-2xl">
                 <img src="https://placehold.co/600x500/0F172A/00d4ff?text=StooshTech+Innovation" alt="StooshTech" class="rounded-2xl w-full">
-                <div class="absolute -bottom-6 -right-6 bg-gradient-to-br from-cyan-400 to-cyan-600 text-slate-950 rounded-2xl px-6 py-4 shadow-xl">
-                    <div class="text-3xl font-bold">Level 1</div>
-                    <div class="text-sm">BBBEE Contributor</div>
-                </div>
+                <div class="absolute -bottom-6 -right-6 bg-gradient-to-br from-cyan-400 to-cyan-600 text-slate-950 rounded-2xl px-6 py-4 shadow-xl"><div class="text-3xl font-bold">Level 1</div><div class="text-sm">BBBEE Contributor</div></div>
             </div>
         </div>
     </div>
@@ -137,100 +105,35 @@
 <!-- Service Teasers -->
 <section class="py-24 bg-slate-900/50">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <span class="text-cyan-400 font-medium tracking-wider uppercase text-sm">What We Do</span>
-            <h2 class="text-5xl font-bold tracking-tighter mt-3">Core Solutions for <span class="text-cyan-400">Modern Enterprises</span></h2>
-            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">We combine tech depth with strategic vision — designed for growth in Gauteng & beyond.</p>
-        </div>
-        
+        <div class="text-center mb-16"><span class="text-cyan-400 font-medium tracking-wider uppercase text-sm">What We Do</span><h2 class="text-5xl font-bold tracking-tighter mt-3">Core Solutions for <span class="text-cyan-400">Modern Enterprises</span></h2><p class="text-slate-400 mt-4 max-w-2xl mx-auto">We combine tech depth with strategic vision — designed for growth in Gauteng & beyond.</p></div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400">
-                <i class="fas fa-chalkboard-user text-4xl text-cyan-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">PM Consulting</h3>
-                <p class="text-slate-400 text-sm">Agile, Waterfall & fractional PM leadership for high-impact projects.</p>
-                <a href="project-management.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a>
-            </div>
-            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400">
-                <i class="fas fa-laptop-code text-4xl text-cyan-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Software & Web</h3>
-                <p class="text-slate-400 text-sm">Custom software, web design, databases — scalable solutions.</p>
-                <a href="software-solutions.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a>
-            </div>
-            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400">
-                <i class="fas fa-chart-line text-4xl text-cyan-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Business Advisory</h3>
-                <p class="text-slate-400 text-sm">Strategy facilitation, growth roadmaps & operational excellence.</p>
-                <a href="advisory-strategy.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a>
-            </div>
-            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400">
-                <i class="fas fa-brain text-4xl text-cyan-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">AI & Microsoft Training</h3>
-                <p class="text-slate-400 text-sm">Empower teams with AI fluency & Microsoft productivity tools.</p>
-                <a href="training.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a>
-            </div>
+            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400"><i class="fas fa-chalkboard-user text-4xl text-cyan-400 mb-4"></i><h3 class="text-xl font-bold mb-2">PM Consulting</h3><p class="text-slate-400 text-sm">Agile, Waterfall & fractional PM leadership for high-impact projects.</p><a href="project-management.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a></div>
+            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400"><i class="fas fa-laptop-code text-4xl text-cyan-400 mb-4"></i><h3 class="text-xl font-bold mb-2">Software & Web</h3><p class="text-slate-400 text-sm">Custom software, web design, databases — scalable solutions.</p><a href="software-solutions.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a></div>
+            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400"><i class="fas fa-chart-line text-4xl text-cyan-400 mb-4"></i><h3 class="text-xl font-bold mb-2">Business Advisory</h3><p class="text-slate-400 text-sm">Strategy facilitation, growth roadmaps & operational excellence.</p><a href="advisory-strategy.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a></div>
+            <div class="service-card bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-cyan-400"><i class="fas fa-brain text-4xl text-cyan-400 mb-4"></i><h3 class="text-xl font-bold mb-2">AI & Microsoft Training</h3><p class="text-slate-400 text-sm">Empower teams with AI fluency & Microsoft productivity tools.</p><a href="training.html" class="inline-flex items-center text-cyan-400 text-sm font-medium mt-4">Learn more →</a></div>
         </div>
     </div>
 </section>
 
 <!-- BBBEE Banner -->
-<section class="py-12 border-y border-slate-800 bg-slate-950">
-    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-8 items-center text-center">
-        <i class="fas fa-chart-simple text-cyan-400 text-3xl"></i>
-        <span class="font-bold text-lg">Level 1 BBBEE Contributor</span>
-        <span class="text-slate-400">| 100% empowered consultancy | Driving digital transformation across SADC</span>
-    </div>
-</section>
+<section class="py-12 border-y border-slate-800 bg-slate-950"><div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-8 items-center text-center"><i class="fas fa-chart-simple text-cyan-400 text-3xl"></i><span class="font-bold text-lg">Level 1 BBBEE Contributor</span><span class="text-slate-400">| 100% empowered consultancy | Driving digital transformation across SADC</span></div></section>
 
 <!-- Footer -->
 <footer class="bg-slate-950 pt-16 pb-8 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-4 gap-8">
-            <div>
-                <div class="text-2xl font-bold"><span class="text-white">StooshTech</span><span class="text-cyan-400"> Concepts</span></div>
-                <p class="text-slate-400 text-sm mt-3">Level 1 BBBEE certified technology & business consultancy based in Johannesburg, empowering SADC enterprises.</p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-slate-400 hover:text-cyan-400"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-cyan-400"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-cyan-400"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <div>
-                <h4 class="font-semibold text-white mb-3">Services</h4>
-                <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="project-management.html" class="hover:text-cyan-400">PM & Fractional PM</a></li>
-                    <li><a href="software-solutions.html" class="hover:text-cyan-400">Software & Web Design</a></li>
-                    <li><a href="advisory-strategy.html" class="hover:text-cyan-400">Strategy Facilitation</a></li>
-                    <li><a href="training.html" class="hover:text-cyan-400">AI & Microsoft Training</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold text-white mb-3">Company</h4>
-                <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold text-white mb-3">Johannesburg HQ</h4>
-                <address class="not-italic text-slate-400 text-sm">
-                    Sandton Central, 2196<br>Gauteng, South Africa<br>
-                    <i class="fas fa-phone-alt mr-1 text-cyan-400"></i> +27 11 123 4567<br>
-                    <i class="fas fa-envelope mr-1 text-cyan-400"></i> hello@stooshtech.co.za
-                </address>
-            </div>
+            <div><div class="text-2xl font-bold"><span class="text-white">StooshTech</span><span class="text-cyan-400"> Concepts</span></div><p class="text-slate-400 text-sm mt-3">Level 1 BBBEE certified technology & business consultancy based in Sandton, Johannesburg, empowering SADC enterprises.</p><div class="flex space-x-4 mt-4"><a href="#" class="text-slate-400 hover:text-cyan-400"><i class="fab fa-linkedin-in"></i></a><a href="#" class="text-slate-400 hover:text-cyan-400"><i class="fab fa-x-twitter"></i></a><a href="#" class="text-slate-400 hover:text-cyan-400"><i class="fab fa-facebook-f"></i></a></div></div>
+            <div><h4 class="font-semibold text-white mb-3">Services</h4><ul class="space-y-2 text-slate-400 text-sm"><li><a href="project-management.html" class="hover:text-cyan-400">PM & Fractional PM</a></li><li><a href="software-solutions.html" class="hover:text-cyan-400">Software & Web Design</a></li><li><a href="advisory-strategy.html" class="hover:text-cyan-400">Strategy Facilitation</a></li><li><a href="training.html" class="hover:text-cyan-400">AI & Microsoft Training</a></li></ul></div>
+            <div><h4 class="font-semibold text-white mb-3">Company</h4><ul class="space-y-2 text-slate-400 text-sm"><li><a href="about.html">About Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="engagement-models.html">Engagement Models</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4 class="font-semibold text-white mb-3">Sandton HQ</h4><address class="not-italic text-slate-400 text-sm">The Business Hub, Sandton, 2196<br>Gauteng, South Africa<br><i class="fas fa-phone-alt mr-1 text-cyan-400"></i> 083 407 5848<br><i class="fas fa-envelope mr-1 text-cyan-400"></i> thabang.tsontsi@gmail.com</address></div>
         </div>
-        <div class="border-t border-slate-800 mt-12 pt-6 text-center text-slate-500 text-sm">
-            © 2025 StooshTech Concepts — Level 1 BBBEE | Driving innovation in Johannesburg & SADC region.
-        </div>
+        <div class="border-t border-slate-800 mt-12 pt-6 text-center text-slate-500 text-sm">© 2025 StooshTech Concepts — Level 1 BBBEE | Driving innovation in Sandton, Johannesburg & SADC region.</div>
     </div>
 </footer>
 
 <script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        menu.classList.toggle('hidden');
-    }
+    function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
+    document.querySelectorAll('#mobileMenu a').forEach(link => link.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('hidden')));
 </script>
 </body>
 </html>
